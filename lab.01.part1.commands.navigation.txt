@@ -16,25 +16,31 @@ $ ls<ENTER>
 Copy and paste the output of ls below.
 ----------
 
-Applications
-Creative Cloud Files
-Desktop
-Documents
-Downloads
-Library
-Movies
-Music
-OM
-Pictures
-Public
-Spitfire
-get-pip.py
-github
-lgBin
-louis.goldford@columbia.edu Creative Cloud Files
-myClasses-Fall2020
+Nachomellow@DESKTOP-M9BMV08 MINGW64 ~
+$ ls
+'3D Objects'/             NTUSER.DAT
+ AMDRM_Install.log        ntuser.dat.LOG1
+ ansel/                   ntuser.dat.LOG2
+ AppData/                 NTUSER.DAT{d10231db-f309-11ea-9705-d5bcc424de68}.TxR.0.regtrans-ms
+ Apple/                   NTUSER.DAT{d10231db-f309-11ea-9705-d5bcc424de68}.TxR.1.regtrans-ms
+'Application Data'@       NTUSER.DAT{d10231db-f309-11ea-9705-d5bcc424de68}.TxR.2.regtrans-ms
+ beats.png                NTUSER.DAT{d10231db-f309-11ea-9705-d5bcc424de68}.TxR.blf
+ Contacts/                NTUSER.DAT{d10231dc-f309-11ea-9705-d5bcc424de68}.TM.blf
+ Cookies@                 NTUSER.DAT{d10231dc-f309-11ea-9705-d5bcc424de68}.TMContainer00000000000000000001.regtrans-ms
+'Creative Cloud Files'/   NTUSER.DAT{d10231dc-f309-11ea-9705-d5bcc424de68}.TMContainer00000000000000000002.regtrans-ms
+ Desktop/                 ntuser.ini
+ Documents/               OneDrive/
+ Downloads/               Pictures/
+ Favorites/               PrintHood@
+ Intel/                   Recent@
+ Links/                  'Saved Games'/
+'Local Settings'@         Searches/
+ MicrosoftEdgeBackups/    SendTo@
+ Music/                  'Start Menu'@
+'My Documents'@           Templates@
+ NetHood@                 Videos/
 
-
+Nachomellow@DESKTOP-M9BMV08 MINGW64 ~
 
 
 ==========
@@ -45,12 +51,10 @@ $ ls -l Documents<ENTER>
 Copy and paste the first *two lines* of output below.
 ----------
 
-total 71632
-drwxr-xr-x@  10 louisgoldford  staff       320 Jun 15  2020 2019.taxes
-drwxrwxr-x@   5 louisgoldford  staff       160 Aug 30  2020 Adobe
-drwxr-xr-x    4 louisgoldford  staff       128 Jun  6  2020 CU
-drwxr-xr-x@   8 louisgoldford  staff       256 May 24  2020 Chroma
 
+total 19201
+drwxr-xr-x 1 Nachomellow 197121        0 Sep  9  2020 '3D Objects'/
+-rw-r--r-- 1 Nachomellow 197121    25733 Jan  7 22:16  AMDRM_Install.log
 
 
 
@@ -62,8 +66,8 @@ $ ls -a Documents
 Copy and paste the first *two lines* of output below.
 ----------
 
-.
-..
+./                           desktop.ini        'Local Disk (C) - Shortcut.lnk'*  'Rockstar Games'/
+ ../                          Downloads/         'My Games'/                       'Scanned Documents'/
 
 
 
@@ -75,8 +79,8 @@ $ ls doesnotexist
 
 Copy and paste the output below.
 ----------
+ls: cannot access 'doesnotexist': No such file or directory
 
-ls: doesnotexist: No such file or directory
 
 
 
@@ -85,7 +89,7 @@ ls: doesnotexist: No such file or directory
 5.  What key do I press to go to the previous command?
 ----------
 
-up arrow
+Up arrow
 
 
 
@@ -93,9 +97,8 @@ up arrow
 ==========
 6.  Name two flags/options that we used in this exercise.
 ----------
+-l -a
 
--l
--a
 
 
 ==========
@@ -124,8 +127,8 @@ $ foo<ENTER>
 Copy and paste the output below.
 ----------
 
+bash: foo: command not found
 
--bash: foo: command not found
 
 
 
@@ -137,8 +140,7 @@ Copy and paste the output below.
 Copy and paste the output below.
 ----------
 
-
--bash: foo: command not found
+bash: foo: command not found
 
 
 
@@ -150,11 +152,11 @@ $ ls -a Desktop
 
 Identify the command, flag, argument, and prompt:
 ----------
-
 command: ls
-flag/option: -a
+flag: -a 
 argument: Desktop
 prompt: $
+
 
 
 Lab 1 / Part 2 - Navigating the File System
@@ -188,14 +190,14 @@ cd mtec1003
 
 $ pwd
 
-Check that the output ends with mtec1003 (something like this: /Users/joe/mtec1003).
+Check that the output ends with mtec1003 (something like this: /Users/joe/mtec1002).
 
 If it doesn't ask for help before moving on!
 
 Copy and paste the output of pwd below.
 ----------
+/c/Users/Nachomellow/mtec1003
 
-/Users/louisgoldford/mtec1003
 
 
 
@@ -209,7 +211,7 @@ $ ls
 Copy and paste the output below.
 ----------
 
-animals
+animals/
 
 
 
@@ -222,8 +224,8 @@ $ ls
 
 Copy and paste the output below.
 ----------
+animals/  food/
 
-animals	food
 
 
 
@@ -237,7 +239,7 @@ $ ls
 Copy and paste the output below.
 ----------
 
-animals	foo	food
+animals/  foo/  food/
 
 
 
@@ -251,7 +253,7 @@ $ pwd
 Copy and paste the output below.
 ----------
 
-/Users/louisgoldford/mtec1003/foo/bar/baz/qux
+/c/Users/Nachomellow/mtec1003/foo/bar/baz/qux
 
 
 
@@ -265,8 +267,8 @@ $ pwd
 Copy and paste the output below.
 ----------
 
-/Users/louisgoldford/mtec1003/foo/bar
 
+/c/Users/Nachomellow/mtec1003/foo/bar
 
 
 
@@ -279,8 +281,8 @@ $ pwd
 Copy and paste the output below.
 ----------
 
-/Users/louisgoldford/mtec1003/foo/bar/baz/qux
 
+/c/Users/Nachomellow/mtec1003/foo/bar/baz/qux
 
 
 
@@ -292,8 +294,8 @@ $ pwd
 
 Copy and paste the output below.
 ----------
+/c/Users/Nachomellow/mtec1003
 
-/Users/louisgoldford/mtec1003
 
 
 
@@ -307,10 +309,10 @@ $ ls -l
 
 Copy and paste the first 3 lines from the output into the space below.
 ----------
-
 total 0
-drwxr-xr-x  3 louisgoldford  staff  96 Jan 31 16:26 foo
-drwxr-xr-x  2 louisgoldford  staff  64 Jan 31 16:24 food
+drwxr-xr-x 1 Nachomellow 197121 0 Feb  2 13:31 foo/
+drwxr-xr-x 1 Nachomellow 197121 0 Feb  2 13:31 food/
+
 
 
 
@@ -324,7 +326,7 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
-/Users/louisgoldford
+/c/Users/Nachomellow
 
 
 
@@ -338,8 +340,8 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
-/Volumes
 
+/c/Users/Nachomellow
 
 
 
@@ -351,23 +353,23 @@ $ pwd
 
 Copy and paste the output into the space below.
 ----------
+bash: cd: /unknown_folder: No such file or directory
 
-/Volumes
-
+/c/Users/Nachomellow
 
 
 
 ==========
 26. Type:
 
-$ cd ~/mtec1003
+$ cd ~/mtec1002
 $ pwd
 
 Copy and paste the output into the space below.
 ----------
 
-/Users/louisgoldford/mtec1003
 
+/c/Users/Nachomellow/mtec1003
 
 
 
@@ -378,30 +380,30 @@ $ hostname
 
 Copy and paste the output into the space below.
 ----------
+DESKTOP-M9BMV08
 
-Louiss-iMac-2.local
 
 
 
 
 ==========
-28. Make sure you're back in your mtec1003, which should be in your home folder.  What command would you use to find out if you're in the right folder?  Write the command below, then run it.
+28. Make sure you're back in your mtec1002, which should be in your home folder.  What command would you use to find out if you're in the right folder?  Write the command below, then run it.
 ----------
 
+
 pwd
-/Users/louisgoldford/mtec1003
 
 
 
 ==========
 29. If you're not in the right directory, type the following command:
 
-cd ~/mtec1003
+cd ~/mtec1002
 
 Otherwise skip this question/step!
 ----------
 
-SKIP!
+
 
 
 
@@ -419,8 +421,8 @@ lemon
 Write the one command you used below:
 ----------
 
-mkdir -p pineapple/orange/strawberry/lemon
 
+mkdir -p pineapple/orange/strawberry/lemon
 
 
 
@@ -429,8 +431,8 @@ mkdir -p pineapple/orange/strawberry/lemon
 
 Write the command you used to create the directory below:
 ----------
-
 mkdir aardvark
+
 
 
 
@@ -440,8 +442,8 @@ mkdir aardvark
 
 What is the modified date of the aardvark directory?
 ----------
+Feb 2 13:12
 
-Jan 31 16:47
 
 
 
@@ -487,8 +489,8 @@ cd ../..
 36. What command is used to delete empty directories?
 ----------
 
-rmdir
 
+rmdir
 
 
 
@@ -505,8 +507,8 @@ pwd
 38. What flag do I pass to ls to print out all files?
 ----------
 
--a
 
+-a
 
 
 
@@ -514,7 +516,7 @@ pwd
 39. What's the shortcut for home directory?
 ----------
 
-cd ~
+cd~
 
 
 
@@ -522,8 +524,8 @@ cd ~
 ==========
 40. What's a pathname?
 ----------
+Is the genral form of the name of a file or directory, it specifies a unique location 
 
-A pathname is the gerneal form of the name of a file or directory; it specifies a unique location in a file system.
 
 
 
@@ -532,17 +534,11 @@ A pathname is the gerneal form of the name of a file or directory; it specifies 
 41. What is a directory?
 ----------
 
-a directory is a cataloging structure on a file system that references other files (and potentially other directories)
-we can think of it as. thing that contains files (it's a litttle more complex that that...) 
-they're usually used to organize files 
-
-Technically, on macOS a directory is a file itself! It's a file that lists the names of items on a disk or other pieces of storage media.
+Is a catologing strutcure on a file system that references other files
 
 
 
 
 ==========
 42. What's the *absolute* path (full path, starting at root) to your user's Downloads directory?
-----------
-
-/Users/louisgoldford/Downloads
+---------- /Users/Nachomellow/Downloads
